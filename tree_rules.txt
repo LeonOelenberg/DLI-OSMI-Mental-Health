@@ -1,61 +1,205 @@
-|--- mh_family <= 1.50
-|   |--- bad_response <= 3.50
+|--- pempl_aware_healthcare <= 2.50
+|   |--- mh_family <= 1.50
 |   |   |--- friends_family <= 1.50
 |   |   |   |--- pcowo_discuss <= 2.00
 |   |   |   |   |--- class: 1
 |   |   |   |--- pcowo_discuss >  2.00
-|   |   |   |   |--- class: 1
+|   |   |   |   |--- pempl_discuss_mh_cons <= 2.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- pempl_discuss_mh_cons >  2.50
+|   |   |   |   |   |--- class: 1
 |   |   |--- friends_family >  1.50
-|   |   |   |--- empl_aware_healthcare <= 2.50
+|   |   |   |--- bad_response <= 3.50
 |   |   |   |   |--- mh_leave <= 2.50
-|   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- company_size <= 63.00
+|   |   |   |   |   |   |--- cowo_discuss <= 1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- cowo_discuss >  1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- company_size >  63.00
+|   |   |   |   |   |   |--- ph_interview <= 1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- ph_interview >  1.50
+|   |   |   |   |   |   |   |--- class: 2
 |   |   |   |   |--- mh_leave >  2.50
-|   |   |   |   |   |--- class: 1
-|   |   |   |--- empl_aware_healthcare >  2.50
-|   |   |   |   |--- pempl_aware_healthcare <= 2.50
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- pempl_aware_healthcare >  2.50
-|   |   |   |   |   |--- class: 2
-|   |--- bad_response >  3.50
-|   |   |--- class: 2
-|--- mh_family >  1.50
-|   |--- pempl_healthcare <= 2.50
-|   |   |--- gender_male <= 0.50
-|   |   |   |--- cowo_neg_think <= 3.50
-|   |   |   |   |--- pcowo_cons_open <= 1.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |   |--- pcowo_cons_open >  1.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |--- cowo_neg_think >  3.50
+|   |   |   |   |   |--- mh_interview <= 1.50
+|   |   |   |   |   |   |--- pcowo_cons_open <= 1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- pcowo_cons_open >  1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mh_interview >  1.50
+|   |   |   |   |   |   |--- age <= 27.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- age >  27.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- bad_response >  3.50
 |   |   |   |   |--- class: 2
-|   |   |--- gender_male >  0.50
+|   |--- mh_family >  1.50
+|   |   |--- friends_family <= 3.50
+|   |   |   |--- bad_response <= 3.50
+|   |   |   |   |--- pempl_discuss_mh_cons <= 3.50
+|   |   |   |   |   |--- pempl_ressources <= 1.50
+|   |   |   |   |   |   |--- empl_aware_healthcare <= 1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- empl_aware_healthcare >  1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pempl_ressources >  1.50
+|   |   |   |   |   |   |--- pempl_aware_healthcare <= 1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- pempl_aware_healthcare >  1.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- pempl_discuss_mh_cons >  3.50
+|   |   |   |   |   |--- company_size <= 63.00
+|   |   |   |   |   |   |--- gender_male <= 0.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- gender_male >  0.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- company_size >  63.00
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |--- bad_response >  3.50
+|   |   |   |   |--- empl_healthcare <= 2.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- empl_healthcare >  2.50
+|   |   |   |   |   |--- class: 2
+|   |   |--- friends_family >  3.50
+|   |   |   |--- gender_male <= 0.50
+|   |   |   |   |--- pempl_discuss_ph_cons <= 1.50
+|   |   |   |   |   |--- pempl_discuss_mh_cons <= 2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- pempl_discuss_mh_cons >  2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- pempl_discuss_ph_cons >  1.50
+|   |   |   |   |   |--- pempl_healthcare <= 2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- pempl_healthcare >  2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |--- gender_male >  0.50
+|   |   |   |   |--- empl_aware_healthcare <= 2.50
+|   |   |   |   |   |--- empl_discuss_mh_cons <= 1.50
+|   |   |   |   |   |   |--- age <= 30.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- age >  30.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- empl_discuss_mh_cons >  1.50
+|   |   |   |   |   |   |--- mh_leave <= 1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- mh_leave >  1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- empl_aware_healthcare >  2.50
+|   |   |   |   |   |--- hurt_career <= 2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- hurt_career >  2.50
+|   |   |   |   |   |   |--- empl_discuss_mh_cons <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- empl_discuss_mh_cons >  2.50
+|   |   |   |   |   |   |   |--- class: 2
+|--- pempl_aware_healthcare >  2.50
+|   |--- mh_family <= 1.50
+|   |   |--- empl_aware_healthcare <= 2.50
 |   |   |   |--- friends_family <= 3.50
-|   |   |   |   |--- mh_interview <= 1.50
+|   |   |   |   |--- pcowo_discuss <= 2.00
 |   |   |   |   |   |--- class: 1
-|   |   |   |   |--- mh_interview >  1.50
-|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- pcowo_discuss >  2.00
+|   |   |   |   |   |--- cowo_neg_think <= 2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- cowo_neg_think >  2.50
+|   |   |   |   |   |   |--- bad_response <= 2.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- bad_response >  2.50
+|   |   |   |   |   |   |   |--- class: 1
 |   |   |   |--- friends_family >  3.50
-|   |   |   |   |--- empl_discuss_mh_cons <= 2.50
+|   |   |   |   |--- pempl_mh_serious <= 3.50
+|   |   |   |   |   |--- age <= 26.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- age >  26.50
+|   |   |   |   |   |   |--- hurt_career <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- hurt_career >  2.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- pempl_mh_serious >  3.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- empl_aware_healthcare >  2.50
+|   |   |   |--- mh_interview <= 1.50
+|   |   |   |   |--- age <= 38.50
+|   |   |   |   |   |--- pempl_mh_serious <= 1.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- pempl_mh_serious >  1.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- age >  38.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- mh_interview >  1.50
+|   |   |   |   |--- hurt_career <= 2.50
 |   |   |   |   |   |--- class: 2
-|   |   |   |   |--- empl_discuss_mh_cons >  2.50
-|   |   |   |   |   |--- class: 2
-|   |--- pempl_healthcare >  2.50
+|   |   |   |   |--- hurt_career >  2.50
+|   |   |   |   |   |--- class: 1
+|   |--- mh_family >  1.50
 |   |   |--- bad_response <= 2.50
-|   |   |   |--- empl_healthcare <= 2.50
-|   |   |   |   |--- cowo_neg_think <= 3.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |   |--- cowo_neg_think >  3.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |--- empl_healthcare >  2.50
-|   |   |   |   |--- mh_interview <= 1.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |   |--- mh_interview >  1.50
-|   |   |   |   |   |--- class: 2
+|   |   |   |--- empl_ressources <= 2.50
+|   |   |   |   |--- age <= 33.50
+|   |   |   |   |   |--- mh_family <= 2.50
+|   |   |   |   |   |   |--- mh_leave <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- mh_leave >  2.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mh_family >  2.50
+|   |   |   |   |   |   |--- psup_discuss <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- psup_discuss >  2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- age >  33.50
+|   |   |   |   |   |--- empl_aware_healthcare <= 1.50
+|   |   |   |   |   |   |--- pempl_mh_serious <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- pempl_mh_serious >  2.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- empl_aware_healthcare >  1.50
+|   |   |   |   |   |   |--- empl_healthcare <= 1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- empl_healthcare >  1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |--- empl_ressources >  2.50
+|   |   |   |   |--- ph_interview <= 2.50
+|   |   |   |   |   |--- empl_formal_discuss <= 2.50
+|   |   |   |   |   |   |--- empl_anon <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- empl_anon >  2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- empl_formal_discuss >  2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- ph_interview >  2.50
+|   |   |   |   |   |--- pempl_aware_healthcare <= 3.50
+|   |   |   |   |   |   |--- pcowo_cons_open <= 1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- pcowo_cons_open >  1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- pempl_aware_healthcare >  3.50
+|   |   |   |   |   |   |--- class: 2
 |   |   |--- bad_response >  2.50
-|   |   |   |--- pempl_aware_healthcare <= 2.50
-|   |   |   |   |--- class: 2
-|   |   |   |--- pempl_aware_healthcare >  2.50
-|   |   |   |   |--- empl_mh_serious <= 2.50
+|   |   |   |--- company_size <= 16.00
+|   |   |   |   |--- age <= 29.50
 |   |   |   |   |   |--- class: 2
-|   |   |   |   |--- empl_mh_serious >  2.50
-|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- age >  29.50
+|   |   |   |   |   |--- friends_family <= 3.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- friends_family >  3.50
+|   |   |   |   |   |   |--- bad_response <= 3.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- bad_response >  3.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |--- company_size >  16.00
+|   |   |   |   |--- pempl_ressources <= 1.50
+|   |   |   |   |   |--- pempl_discuss_ph_cons <= 1.50
+|   |   |   |   |   |   |--- age <= 31.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- age >  31.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pempl_discuss_ph_cons >  1.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- pempl_ressources >  1.50
+|   |   |   |   |   |--- empl_discuss_mh_cons <= 1.50
+|   |   |   |   |   |   |--- obs_reveal <= 1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- obs_reveal >  1.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- empl_discuss_mh_cons >  1.50
+|   |   |   |   |   |   |--- class: 2
