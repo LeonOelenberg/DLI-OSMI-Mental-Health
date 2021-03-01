@@ -1,49 +1,61 @@
-|--- friends_family <= 0.00
-|   |--- pempl_aware_healthcare <= 2.50
-|   |   |--- empl_aware_healthcare <= 1.50
-|   |   |   |--- class: 1
-|   |   |--- empl_aware_healthcare >  1.50
-|   |   |   |--- class: 1
-|   |--- pempl_aware_healthcare >  2.50
-|   |   |--- mh_family <= 1.50
-|   |   |   |--- class: 1
-|   |   |--- mh_family >  1.50
-|   |   |   |--- class: 1
-|--- friends_family >  0.00
-|   |--- mh_family <= 1.50
-|   |   |--- bad_response <= 3.50
-|   |   |   |--- empl_aware_healthcare <= 2.50
+|--- pempl_healthcare <= 2.50
+|   |--- bad_response <= 3.50
+|   |   |--- friends_family <= 0.00
+|   |   |   |--- mh_leave <= 1.50
+|   |   |   |   |--- class: 2
+|   |   |   |--- mh_leave >  1.50
+|   |   |   |   |--- mh_leave <= 3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mh_leave >  3.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- friends_family >  0.00
+|   |   |   |--- gender_male <= 0.50
+|   |   |   |   |--- empl_discuss_ph_cons <= 2.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- empl_discuss_ph_cons >  2.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- gender_male >  0.50
 |   |   |   |   |--- friends_family <= 4.50
 |   |   |   |   |   |--- class: 1
 |   |   |   |   |--- friends_family >  4.50
-|   |   |   |   |   |--- class: 1
-|   |   |   |--- empl_aware_healthcare >  2.50
-|   |   |   |   |--- pempl_healthcare <= 2.50
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- pempl_healthcare >  2.50
 |   |   |   |   |   |--- class: 2
-|   |   |--- bad_response >  3.50
+|   |--- bad_response >  3.50
+|   |   |--- friends_family <= 1.50
+|   |   |   |--- class: 1
+|   |   |--- friends_family >  1.50
+|   |   |   |--- empl_discuss_ph_cons <= 1.50
+|   |   |   |   |--- pempl_mh_serious <= 2.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- pempl_mh_serious >  2.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- empl_discuss_ph_cons >  1.50
+|   |   |   |   |--- class: 2
+|--- pempl_healthcare >  2.50
+|   |--- friends_family <= 0.00
+|   |   |--- hurt_career <= 3.50
 |   |   |   |--- class: 2
-|   |--- mh_family >  1.50
-|   |   |--- pempl_healthcare <= 2.50
-|   |   |   |--- empl_aware_healthcare <= 2.50
-|   |   |   |   |--- gender_male <= 0.50
+|   |   |--- hurt_career >  3.50
+|   |   |   |--- pempl_formal_discuss <= 1.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- pempl_formal_discuss >  1.50
+|   |   |   |   |--- class: 1
+|   |--- friends_family >  0.00
+|   |   |--- pempl_mh_serious <= 3.50
+|   |   |   |--- gender_male <= 0.50
+|   |   |   |   |--- pempl <= 1.50
 |   |   |   |   |   |--- class: 2
-|   |   |   |   |--- gender_male >  0.50
+|   |   |   |   |--- pempl >  1.50
 |   |   |   |   |   |--- class: 2
-|   |   |   |--- empl_aware_healthcare >  2.50
-|   |   |   |   |--- ph_interview <= 1.50
+|   |   |   |--- gender_male >  0.50
+|   |   |   |   |--- bad_response <= 3.50
 |   |   |   |   |   |--- class: 2
-|   |   |   |   |--- ph_interview >  1.50
+|   |   |   |   |--- bad_response >  3.50
 |   |   |   |   |   |--- class: 2
-|   |   |--- pempl_healthcare >  2.50
-|   |   |   |--- bad_response <= 2.50
-|   |   |   |   |--- hurt_career <= 2.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |   |--- hurt_career >  2.50
-|   |   |   |   |   |--- class: 2
-|   |   |   |--- bad_response >  2.50
-|   |   |   |   |--- company_size <= 16.00
-|   |   |   |   |   |--- class: 2
-|   |   |   |   |--- company_size >  16.00
+|   |   |--- pempl_mh_serious >  3.50
+|   |   |   |--- empl_aware_healthcare <= 1.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- empl_aware_healthcare >  1.50
+|   |   |   |   |--- hurt_career <= 3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- hurt_career >  3.50
 |   |   |   |   |   |--- class: 2
