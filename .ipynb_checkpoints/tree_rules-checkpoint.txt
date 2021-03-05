@@ -1,0 +1,112 @@
+|--- hurt_career <= 3.50
+|   |--- psup_discuss <= 3.50
+|   |   |--- sup_discuss <= 2.50
+|   |   |   |--- empl_mh_serious <= 2.50
+|   |   |   |   |--- cowo_discuss <= 1.50
+|   |   |   |   |   |--- pempl_aware_healthcare <= 3.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pempl_aware_healthcare >  3.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- cowo_discuss >  1.50
+|   |   |   |   |   |--- pcowo_cons_open <= 1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pcowo_cons_open >  1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- empl_mh_serious >  2.50
+|   |   |   |   |--- age <= 32.50
+|   |   |   |   |   |--- empl_formal_discuss <= 2.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- empl_formal_discuss >  2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- age >  32.50
+|   |   |   |   |   |--- mh_leave <= 4.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- mh_leave >  4.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |--- sup_discuss >  2.50
+|   |   |   |--- pempl_healthcare <= 2.50
+|   |   |   |   |--- pempl_healthcare <= 1.50
+|   |   |   |   |   |--- mh_leave <= 4.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mh_leave >  4.50
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- pempl_healthcare >  1.50
+|   |   |   |   |   |--- pcowo_discuss <= 2.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pcowo_discuss >  2.00
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |--- pempl_healthcare >  2.50
+|   |   |   |   |--- remote <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- remote >  1.50
+|   |   |   |   |   |--- friends_family <= 4.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- friends_family >  4.50
+|   |   |   |   |   |   |--- class: 1
+|   |--- psup_discuss >  3.50
+|   |   |--- cowo_discuss <= 2.50
+|   |   |   |--- empl_healthcare <= 1.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- empl_healthcare >  1.50
+|   |   |   |   |--- mh_leave <= 3.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- mh_leave >  3.50
+|   |   |   |   |   |--- class: 2
+|   |   |--- cowo_discuss >  2.50
+|   |   |   |--- empl_mh_serious <= 2.50
+|   |   |   |   |--- class: 3
+|   |   |   |--- empl_mh_serious >  2.50
+|   |   |   |   |--- empl_formal_discuss <= 1.50
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- empl_formal_discuss >  1.50
+|   |   |   |   |   |--- class: 3
+|--- hurt_career >  3.50
+|   |--- cowo_neg_think <= 2.50
+|   |   |--- sought_treatment <= 1.50
+|   |   |   |--- mh_family <= 1.50
+|   |   |   |   |--- class: 2
+|   |   |   |--- mh_family >  1.50
+|   |   |   |   |--- class: 1
+|   |   |--- sought_treatment >  1.50
+|   |   |   |--- bad_response <= 3.50
+|   |   |   |   |--- company_size <= 63.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- company_size >  63.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- bad_response >  3.50
+|   |   |   |   |--- class: 1
+|   |--- cowo_neg_think >  2.50
+|   |   |--- pempl_discuss_mh_cons <= 3.50
+|   |   |   |--- primarily_tech <= 1.50
+|   |   |   |   |--- age <= 28.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- age >  28.00
+|   |   |   |   |   |--- empl_healthcare <= 2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- empl_healthcare >  2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- primarily_tech >  1.50
+|   |   |   |   |--- age <= 38.50
+|   |   |   |   |   |--- empl_anon <= 1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- empl_anon >  1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- age >  38.50
+|   |   |   |   |   |--- pempl_anon <= 2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pempl_anon >  2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- pempl_discuss_mh_cons >  3.50
+|   |   |   |--- pcowo_discuss <= 2.00
+|   |   |   |   |--- cowo_neg_think <= 3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- cowo_neg_think >  3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- pcowo_discuss >  2.00
+|   |   |   |   |--- pempl_healthcare <= 3.50
+|   |   |   |   |   |--- pempl_discuss_ph_cons <= 1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- pempl_discuss_ph_cons >  1.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- pempl_healthcare >  3.50
+|   |   |   |   |   |--- class: 1
